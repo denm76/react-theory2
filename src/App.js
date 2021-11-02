@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import classes from './App.module.scss'
 import About from './About/About'
 import Cars from './Cars/Cars'
+import {Route} from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
         </nav>
 
         <hr/>
+          {/* localhost:3000 */}
+          <Route path="/" exact render={()=><h1>Home Page</h1>}/>
         <About />
 
         <Cars />
